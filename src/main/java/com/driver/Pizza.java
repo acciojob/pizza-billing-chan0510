@@ -46,8 +46,9 @@ public class Pizza {
         if(isExtraCheeseAdded==false){
             totalPizzaBill+=extraCheese;
             isExtraCheeseAdded=true;
+            bill+="Extra Cheese Added: "+extraCheese+"\n";
         }
-        bill+="Extra Cheese Added: "+extraCheese+"\n";
+
     }
 
     public void addExtraToppings(){
@@ -55,16 +56,17 @@ public class Pizza {
         if(isExtraToppingAdded==false){
             totalPizzaBill+=extraTopping;
             isExtraToppingAdded=true;
+            bill+="Extra Toppings Added: "+extraTopping+"\n";
         }
-        bill+="Extra Toppings Added: "+extraTopping+"\n";
+
     }
 
     public void addTakeaway(){
         if(isCostOfPaperBagAdded==false){
             isCostOfPaperBagAdded=true;
             totalPizzaBill+=costOfPaperBag;
+            bill+="Paperbag Added: "+costOfPaperBag+"\n";
         }
-        bill+="Paperbag Added: "+costOfPaperBag+"\n";
         // your code goes here
     }
 
