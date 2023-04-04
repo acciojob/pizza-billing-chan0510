@@ -19,12 +19,10 @@ public class Pizza {
         if(isVeg==true){
             price=300;
             extraTopping=70;
-            bill="Veg pizza base price: "+price+"\n" ;
         }
         else {
             price=400;
             extraTopping=120;
-            bill="Non-veg pizza base price: "+price+"\n" ;
         }
         costOfPaperBag=20;
         extraCheese=80;
@@ -33,12 +31,12 @@ public class Pizza {
         isExtraCheeseAdded=false;
         isExtraToppingAdded=false;
         isBillGenerated=false;
-        // your code goes here
+        bill="Base Price Of The Pizza: "+price+"\n" ;
 
     }
 
     public int getPrice(){
-        return this.price;
+        return totalPizzaBill;
     }
 
     public void addExtraCheese(){
