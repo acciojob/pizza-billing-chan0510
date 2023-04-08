@@ -16,7 +16,7 @@ public class Pizza {
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
-        if(isVeg==true){
+        if(isVeg){
             price=300;
             extraTopping=70;
         }
